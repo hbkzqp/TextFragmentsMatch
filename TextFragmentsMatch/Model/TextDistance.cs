@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TextFragmentsMatch
 {
-    public class TextDistance
+    public class TextDistance:IComparable
     {
         public TextDistance()
         {
@@ -18,14 +18,23 @@ namespace TextFragmentsMatch
 
         public string Text { get; set; }
         public int Distance { get; set; }
-        public static bool operator >(TextDistance td1, TextDistance td2)
-        {
-            return td1.Distance > td2.Distance;
-        }
 
-        public static bool operator <(TextDistance td1, TextDistance td2)
+
+        public int CompareTo(object obj)
         {
-            return td1.Distance < td2.Distance;
+            if (obj is TextDistance)
+            {
+                var objDistance = obj as TextDistance;
+                if (Distance > objDistance.Distance)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            throw new Exception("Object not valid.");
         }
     }
 }
