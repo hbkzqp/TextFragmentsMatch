@@ -5,3 +5,5 @@
 /.vs
 /TextFragmentsMatch/obj
 /TextFragmentsMatch/bin/Debug/netcoreapp2.0
+/TextMergeTest/obj
+/TextMergeTest/bin/Debug/netcoreapp2.0

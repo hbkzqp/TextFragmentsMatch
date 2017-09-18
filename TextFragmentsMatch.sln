@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFragmentsMatch", "TextFragmentsMatch\TextFragmentsMatch.csproj", "{FBE4FEA5-767C-49CA-9071-9A729F1FE986}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFragmentsMatch", "TextFragmentsMatch\TextFragmentsMatch.csproj", "{FBE4FEA5-767C-49CA-9071-9A729F1FE986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextMergeTest", "TextMergeTest\TextMergeTest.csproj", "{D49933CB-87A7-4142-8A0F-2285827FFEDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FBE4FEA5-767C-49CA-9071-9A729F1FE986}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE4FEA5-767C-49CA-9071-9A729F1FE986}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBE4FEA5-767C-49CA-9071-9A729F1FE986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49933CB-87A7-4142-8A0F-2285827FFEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49933CB-87A7-4142-8A0F-2285827FFEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49933CB-87A7-4142-8A0F-2285827FFEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49933CB-87A7-4142-8A0F-2285827FFEDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

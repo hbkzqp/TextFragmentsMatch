@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TextFragmentsMatch
 {
-    interface ITextMatcher
+    public interface ITextMatcher
     {
         string MatchText(List<string> textFrags);
     }

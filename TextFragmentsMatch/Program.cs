@@ -8,9 +8,8 @@ namespace TextFragmentsMatch
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            TextMatcher m = new TextMatcher();
-            List<string> s = new List<string>(){"abcdc","cdcee","eeaa","aa"};
+            TextMatcher m = new TextMatcher(new StringHandler());
+            List<string> s = new List<string>(){"abcdc","cdcee","eeaa","ccabcd","aa"};
             m.MatchText(s);
         }
     }
