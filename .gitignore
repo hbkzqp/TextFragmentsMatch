@@ -7,3 +7,5 @@
 /TextFragmentsMatch/bin/Debug/netcoreapp2.0
 /TextMergeTest/obj
 /TextMergeTest/bin/Debug/netcoreapp2.0
+/packages/MSTest.TestFramework.1.1.18
+/packages/MSTest.TestAdapter.1.1.18

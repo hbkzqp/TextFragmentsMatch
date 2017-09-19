@@ -6,7 +6,7 @@ namespace TextFragmentsMatch
 {
     public class StringHandler:IStringHandler
     {
-        public  int CalculateMatchLength(string firstStr, string secondStr)
+        public  int CalculateMatchDistance(string firstStr, string secondStr)
         {
             while (secondStr.IndexOf(firstStr, StringComparison.Ordinal) != 0 && firstStr.Length != 0)
             {
