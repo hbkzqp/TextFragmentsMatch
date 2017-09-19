@@ -8,11 +8,11 @@ namespace TextFragmentsMatch
 {
     public class TextMatcher : ITextMatcher
     {
-        //The dictionary which stores the string and its longest distance.
+        //The dictionary which stores the string and its longest distance. 
         private Dictionary<string, TextDistance> _textDistanceDictionary;
         //The text to merge
         private List<string> _textFrags;
-        //The string handler to make string process
+        //The string handler to make string process,Generally it should be injected by Dependency injection, currently we have only Unit test, so I directly new one.
         private readonly IStringHandler _stringHandler;
         public TextMatcher(IStringHandler stringHandler)
         {
@@ -36,7 +36,7 @@ namespace TextFragmentsMatch
                 while (_textDistanceDictionary.Count > 1);
             }
 
-            return _textFrags?.FirstOrDefault();
+            return textFrags?.FirstOrDefault();
         }
         /// <summary>
         /// Once we merge a pair of text, we need to remove them and add merged in t he list.
@@ -107,6 +107,7 @@ namespace TextFragmentsMatch
             RemoveContainedStr();
             //Init the dictionary of distance
             _textFrags.ForEach(InsertMaxDistance);
+
         }
         /// <summary>
         /// Remove strings which is contained by others
