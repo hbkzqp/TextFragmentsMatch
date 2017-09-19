@@ -1,10 +1,10 @@
 # Read Me
 ## Introduction of the process
 
-For this text merge task, the logic is to build a dictionary to store  every text and its most match text. Then we loop until the dictionary lennth to 1, find the biggest match in it , merge remove the two text, insert the merged text to the dictionary and update it. Until its length to 1, we return the last one text.
+For this text merge task, the logic is to build a dictionary to store  every text and its most match text. Then we loop until the dictionary lennth to 1, find the biggest match in it , merge and remove the two text, insert the merged text to the dictionary and update it. Until its length to 1, we return the last one text.
 
 ## Data Structure
-A class TextDistance is created to mark how on string can match the other string. Property "Text" is the target match text. Property "Distance" is how many charters it match the original one. 
+A class TextDistance is created to mark how many string can match the other string. Property "Text" is the target match text. Property "Distance" is how many charters it match the original one. 
 ``` C#
 public class TextDistance
 {
@@ -38,8 +38,10 @@ public interface IStringHandler
 }
 ```
 ### Class
+
 #### 1. TextMatcher : ITextMatcher
 This class implement ITextMatcher which contains all the logic of text list and dictionary match, merge, update logic.
+
 #### 2. StringHandler : IStringHandler
 This class implement IStringHandler which contains the logic of calculation and merge.
 
@@ -48,9 +50,12 @@ The Main entry point, but we do not use it, we use Unit test to show the result.
 
 ## Unit Test
 For this project, we do not care file IO, so I directly use the Unit test for run all the cases.
+
 #### MatchTextUnitTest
 We just need to run all unit test in this file, it contains all the test cases in my mind.
 
 ## Run the solution
+
 1. Please make sure open the solution with the newest vs 2017 and .net core 2.0 installed. (https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.0.0-download.md)
+
 2. Please Run all test, to show all the test case and result.
