@@ -35,7 +35,6 @@ namespace TextFragmentsMatch
                 }
                 while (_textDistanceDictionary.Count > 1);
             }
-
             return textFrags?.FirstOrDefault();
         }
         /// <summary>
@@ -71,7 +70,7 @@ namespace TextFragmentsMatch
                 _textFrags.Where(d => d != mergedText).Select(s1 => new TextDistance(s1, _stringHandler.CalculateMatchDistance(mergedText, s1))).Max());
         }
         /// <summary>
-        /// Once we merge a pair of text, we need to update all the text in the list which had longgest distance with that pair.
+        /// Once we merge a pair of text, we need to update all the text in the dictionary which refer that pair.
         /// </summary>
         /// <param name="maxDistance"></param>
         private void UpdateDictionaryForRelatedDistance(KeyValuePair<string, TextDistance> maxDistance)
