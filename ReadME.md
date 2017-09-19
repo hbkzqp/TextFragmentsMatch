@@ -1,7 +1,7 @@
 #Read Me
 ## Thinking of the process
 
-For this text merge task. the logic is to build a dictionary to store all every text and its responde most match string. Then we loop until the dictionary lennth to 1, find the most match in it , merge remove the two text, insert the merged text to the dictionary and update it. Until its length to 1, we return the last one text  
+For this text merge task, the logic is to build a dictionary to store  every text and its most match text. Then we loop until the dictionary lennth to 1, find the most match in it , merge remove the two text, insert the merged text to the dictionary and update it. Until its length to 1, we return the last one text  
 ## Data Structure
 A class TextDistance is created to mark how on string can match the other string. Property "Text" is the target match text. Property "Distance" is how much charters it match the original one. 
 ``` C#
