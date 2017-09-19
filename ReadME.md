@@ -22,10 +22,10 @@ public class TextDistance
 #### 1. ITextMatcher
 This is the interface for all the algrithem, for uppper level to call.
 ``` C#
- public interface ITextMatcher
-    {
-        string MatchText(List<string> textFrags);
-    }
+public interface ITextMatcher
+{
+    string MatchText(List<string> textFrags);
+}
 ```
 #### 2. IStringHandler
 This is the string processes which are indenpendent to the algrithem, CalculateMatchDistance is to caculate the distance with 2 strings. ConcatText is to merge the string depending on the distance.
