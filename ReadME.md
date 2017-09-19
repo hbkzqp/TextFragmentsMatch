@@ -16,7 +16,7 @@ public class TextDistance
 ``` 
 
 ## Flow 
-
+![Image of Yaktocat](https://github.com/hbkzqp/TextFragmentsMatch/blob/master/Flow.jpg)
 ## Code Structure
 
 ### Interface
