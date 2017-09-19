@@ -4,7 +4,7 @@
 For this text merge task. the logic is to build a dictionary to store all every text and its responde most match string. Then we loop until the dictionary lennth to 1, find the most match in it , merge remove the two text, insert the merged text to the dictionary and update it. Until its length to 1, we return the last one text  
 ## Data Structure
 A class TextDistance is created to mark how on string can match the other string. Property "Text" is the target match text. Property "Distance" is how much charters it match the original one. 
-```
+``` C#
 public class TextDistance
 {
     {        
@@ -12,7 +12,8 @@ public class TextDistance
         public int Distance { get; set; }
     }
 }
-```
+``` 
+
 ## Flow 
 
 ## Code Structure
@@ -20,7 +21,7 @@ public class TextDistance
 ### Interface
 #### 1. ITextMatcher
 This is the interface for all the algrithem, for uppper level to call.
-```
+``` C#
  public interface ITextMatcher
     {
         string MatchText(List<string> textFrags);
@@ -28,7 +29,7 @@ This is the interface for all the algrithem, for uppper level to call.
 ```
 #### 2. IStringHandler
 This is the string processes which are indenpendent to the algrithem, CalculateMatchDistance is to caculate the distance with 2 strings. ConcatText is to merge the string depending on the distance.
-```
+``` C#
 public interface IStringHandler
 {
     int CalculateMatchDistance(string firstStr, string secondStr);
